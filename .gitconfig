@@ -1,0 +1,16 @@
+[user]
+	name = Martin Krizek
+	email = mkrizek@redhat.com
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+    ui = auto
+[alias]
+	co = checkout
+	br = branch -v
+	ci = commit
+	st = status
+	last = log -1 HEAD
+[color "diff"]
+	whitespace = red reverse
