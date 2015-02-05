@@ -1,3 +1,3 @@
-colorscheme evening
+colorscheme solarized
 set guioptions-=T
-:set guifont=DejaVu\ Sans\ Mono\ 10
+set guifont=Monospace\ 11

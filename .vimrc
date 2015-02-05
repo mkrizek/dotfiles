@@ -15,3 +15,4 @@ map <C-t> :tabnew<CR>
 map <C-n> :tabn<CR>
 map <C-p> :tabp<CR>
 
+colorscheme smyck
