@@ -2,10 +2,9 @@ execute pathogen#infect()
 
 set nocompatible
 
-colorscheme smyck
 set background=dark
 syntax enable
-
+let python_highlight_all=1
 
 :set colorcolumn=100
 :highlight ColorColumn ctermbg=235
@@ -64,8 +63,12 @@ set nojoinspaces
 let g:jedi#use_tabs_not_buffers = 1
 
 
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
 set laststatus=2
 set t_Co=256
+
+
+" NERDTree
+let NERDTreeIgnore=['\.pyc$', '\~$']
