@@ -1,3 +1,13 @@
+" Plugins:
+" ale
+" ansible-vim
+" ctrlp.vim
+" jedi-vim
+" nerdtree
+" nerdtree-git-plugin
+" vim-airline
+" vim-fugitive
+
 execute pathogen#infect()
 
 set nocompatible
@@ -44,10 +54,26 @@ set smartcase       " when searching try to be smart about cases
 nnoremap <leader><space> :nohlsearch<CR> " turn off search highlight
 
 
-" tabs shortcuts
-map <C-t> :tabnew<CR>
-map <C-n> :tabn<CR>
-map <C-p> :tabp<CR>
+" This allows buffers to be hidden if you've modified a buffer.
+" This is almost a must if you wish to use buffers in this way.
+set hidden
+
+" To open a new empty buffer
+" This replaces :tabnew which I used to bind to this mapping
+nmap <leader>T :enew<cr>
+
+" Move to the next buffer
+nmap <leader>l :bnext<CR>
+
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nmap <leader>bq :bp <BAR> bd #<CR>
+
+" Show all open buffers and their status
+nmap <leader>bl :ls<CR>
 
 
 " delete trailing white space on save
@@ -63,12 +89,21 @@ set nojoinspaces
 let g:jedi#use_tabs_not_buffers = 1
 
 
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-set laststatus=2
-set t_Co=256
+" python3 from powerline.vim import setup as powerline_setup
+" python3 powerline_setup()
+" python3 del powerline_setup
+" set laststatus=2
+" set t_Co=256
 
 
 " NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$']
+
+" airline
+let g:airline#extensions#ale#enabled = 1
+
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+"
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
