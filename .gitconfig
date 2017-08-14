@@ -1,6 +1,6 @@
 [user]
     name = Martin Krizek
-    email = mkrizek@redhat.com
+    email = martin.krizek@gmail.com
 [color]
     branch = auto
     diff = auto
@@ -11,13 +11,8 @@
     br = branch -v
     ci = commit
     st = status
-    last = log -1 HEAD
-    pod = push origin develop
-    pom = push origin master
-    chp = cherry-pick
-    cia = commit -a
     lg = log --decorate=full
 [color "diff"]
     whitespace = red reverse
 [push]
-	default = simple
+    default = simple
