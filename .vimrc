@@ -76,6 +76,10 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 
 
+nnoremap <leader>p oimport pdb; pdb.set_trace()<Esc>
+nnoremap <leader>e oimport epdb; epdb.serve()<Esc>
+nnoremap <leader>q oimport q; q(<Esc>
+
 " delete trailing white space on save
 func! DeleteTrailingWS()
     exe "normal mz"
@@ -107,3 +111,5 @@ let g:airline#extensions#tabline#enabled = 1
 "
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+nmap <F8> :TagbarToggle<CR>
