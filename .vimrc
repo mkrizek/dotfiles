@@ -5,6 +5,7 @@
 " jedi-vim
 " nerdtree
 " nerdtree-git-plugin
+" tagbar
 " vim-airline
 " vim-fugitive
 
@@ -90,7 +91,7 @@ autocmd BufWrite *.py :call DeleteTrailingWS()
 
 set nojoinspaces
 
-let g:jedi#use_tabs_not_buffers = 1
+" let g:jedi#use_tabs_not_buffers = 1
 
 
 " python3 from powerline.vim import setup as powerline_setup
