@@ -12,6 +12,9 @@
     ci = commit
     st = status
     lg = log --decorate=full
+    up = !git fetch upstream && git rebase upstream/devel
+    pr = !sh -c 'git fetch upstream pull/$1/head:pr-$1' -
+    cp = cherry-pick -x
 [color "diff"]
     whitespace = red reverse
 [push]
