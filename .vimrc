@@ -78,9 +78,4 @@ nnoremap <leader>e oimport epdb; epdb.serve()<Esc>
 nnoremap <leader>q oimport q; q(<Esc>
 
 " delete trailing white space on save
-func! DeleteTrailingWS()
-    exe "normal mz"
-    %s/\s\+$//ge
-    exe "normal `z"
-endfunc
-autocmd BufWrite *.py :call DeleteTrailingWS()
+autocmd FileType py,yml,yaml autocmd BufWritePre <buffer> %s/\s\+$//e
