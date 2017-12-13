@@ -15,6 +15,10 @@
     up = !git fetch upstream && git rebase upstream/devel
     pr = !sh -c 'git fetch upstream pull/$1/head:pr-$1' -
     cp = cherry-pick -x
+    bs = bisect start
+    bg = bisect good
+    bb = bisect bad
+    be = bisect reset
 [color "diff"]
     whitespace = red reverse
 [push]
