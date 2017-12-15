@@ -69,12 +69,10 @@ nmap <leader>h :bprevious<CR>
 " Close the current buffer and move to the previous one
 nmap <leader>bq :bp <BAR> bd #<CR>
 
-" Show all open buffers and their status
-nmap <leader>bl :ls<CR>
 
-
+nnoremap <leader>e oimport epdb; epdb.st()<Esc>
+nnoremap <leader>er oimport epdb; epdb.serve()<Esc>
 nnoremap <leader>p oimport pdb; pdb.set_trace()<Esc>
-nnoremap <leader>e oimport epdb; epdb.serve()<Esc>
 nnoremap <leader>q oimport q; q(<Esc>
 
 " delete trailing white space on save
