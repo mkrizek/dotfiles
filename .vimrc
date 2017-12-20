@@ -4,6 +4,8 @@ set nocompatible
 
 syntax on
 set background=dark
+set t_Co=256
+set t_ut=
 colorscheme codedark
 set wildignore=*.o,*~,*.pyc                         " ignore compiled files
 set number                                          " show line numbers
@@ -47,10 +49,11 @@ set statusline+=%m                                  " modified
 set statusline+=%r                                  " readonly
 set statusline+=%h                                  " helpstatus
 set statusline+=%w                                  " preview
-set statusline+=\ %l,%c                             " line,col
-set statusline+=\ (%p%%)                            " percent
-set statusline+=%=                                  " left/right sep
 set statusline+=%f                                  " relative filepath
+set statusline+=%=                                  " left/right sep
+set statusline+=%y                                  " file type
+set statusline+=\ %p%%                              " percent
+set statusline+=\ %l:%c                             " line:col
 
 
 " This allows buffers to be hidden if you've modified a buffer.
