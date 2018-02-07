@@ -10,6 +10,9 @@ fi
 
 # User specific aliases and functions
 
+alias q="tail -f /tmp/q"
+alias ans="cd ~/devel/ansible"
+
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
 }
