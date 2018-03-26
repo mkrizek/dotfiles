@@ -19,6 +19,7 @@
     bg = bisect good
     bb = bisect bad
     be = bisect reset
+    sq = !sh -c 'git rebase -i HEAD~$1' -
 [color "diff"]
     whitespace = red reverse
 [push]
