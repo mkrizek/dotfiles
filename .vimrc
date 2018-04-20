@@ -6,7 +6,7 @@ syntax on
 set background=dark
 set t_Co=256
 set t_ut=
-colorscheme codedark
+
 set wildignore=*.o,*~,*.pyc                         " ignore compiled files
 set number                                          " show line numbers
 set showcmd                                         " show command in bottom bar
