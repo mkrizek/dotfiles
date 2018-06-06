@@ -13,6 +13,9 @@ fi
 alias q="tail -f /tmp/q"
 alias ans="cd ~/devel/ansible"
 
+export HISTFILESIZE=
+export HISTSIZE=
+
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/'
 }

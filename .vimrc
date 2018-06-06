@@ -4,6 +4,7 @@ set nocompatible
 
 syntax on
 set background=dark
+colorscheme default
 set t_Co=256
 set t_ut=
 

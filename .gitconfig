@@ -20,7 +20,11 @@
     bb = bisect bad
     be = bisect reset
     sq = !sh -c 'git rebase -i HEAD~$1' -
+    g = grep --break --heading --line-number
 [color "diff"]
     whitespace = red reverse
 [push]
     default = simple
+[grep]
+    extendRegexp = true
+    lineNumber = true
