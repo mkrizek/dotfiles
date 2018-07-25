@@ -10,7 +10,7 @@ fi
 
 # User specific aliases and functions
 
-alias q="tail -f /tmp/q"
+alias q="tail -F /tmp/q"
 alias ans="cd ~/devel/ansible"
 
 export HISTFILESIZE=
@@ -29,9 +29,3 @@ PS1="$GREEN\u@\h$NOCOLOR:$BLUE\w$YELLOW\$(parse_git_branch) $NOCOLOR\$ "
 #PS1="$GREEN\w$YELLOW\$(parse_git_branch)$GREEN❯ $NOCOLOR"
 export EDITOR=vim
 export LIBVIRT_DEFAULT_URI="qemu:///system"
-#if [ -f `which powerline-daemon` ]; then
-#    powerline-daemon -q
-#    POWERLINE_BASH_CONTINUATION=1
-#    POWERLINE_BASH_SELECT=1
-#    . /usr/share/powerline/bash/powerline.sh
-#fi
