@@ -1,5 +1,7 @@
 " Plugins - ale, jedi
 
+let g:ale_python_flake8_executable = 'flake8-2'
+
 set nocompatible
 
 syntax on

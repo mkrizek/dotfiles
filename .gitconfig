@@ -13,6 +13,7 @@
     st = status
     lg = log --decorate=full
     up = !git fetch upstream && git rebase upstream/devel
+    upm = !git fetch upstream && git rebase upstream/master
     pr = !sh -c 'git fetch upstream pull/$1/head:pr-$1' -
     cp = cherry-pick -x
     bs = bisect start
