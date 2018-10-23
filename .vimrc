@@ -1,6 +1,8 @@
 " Plugins - ale, jedi
 
+let g:ale_enabled = 0
 let g:ale_python_flake8_executable = 'flake8-2'
+nmap <leader>c :ALEToggle<CR>
 
 set nocompatible
 
@@ -11,7 +13,6 @@ set t_Co=256
 set t_ut=
 
 set wildignore=*.o,*~,*.pyc                         " ignore compiled files
-set number                                          " show line numbers
 set showcmd                                         " show command in bottom bar
 set cursorline                                      " highlight current line
 set wildmenu                                        " visual autocomplete for command menu
