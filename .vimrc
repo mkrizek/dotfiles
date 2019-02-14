@@ -1,8 +1,16 @@
-" Plugins - ale, jedi
+" Plugins - ale, ansible-vim, jedi
 
 let g:ale_enabled = 0
 let g:ale_python_flake8_executable = 'flake8-2'
 nmap <leader>c :ALEToggle<CR>
+
+let g:ansible_unindent_after_newline = 1
+let g:ansible_yamlKeyName = 'yamlKey'
+let g:ansible_attribute_highlight = "ob"
+let g:ansible_name_highlight = 'd'
+let g:ansible_extra_keywords_highlight = 1
+let g:ansible_normal_keywords_highlight = 'Constant'
+let g:ansible_with_keywords_highlight = 'Constant'
 
 set nocompatible
 
@@ -79,6 +87,7 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 
 nnoremap <leader>e oimport epdb; epdb.st()<Esc>
 nnoremap <leader>er oimport epdb; epdb.serve()<Esc>
+nnoremap <leader>eu oimport pudb; pudb.set_trace()<Esc>
 nnoremap <leader>p oimport pdb; pdb.set_trace()<Esc>
 nnoremap <leader>q oimport q; q(<Esc>
 

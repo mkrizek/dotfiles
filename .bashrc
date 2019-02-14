@@ -11,7 +11,6 @@ fi
 # User specific aliases and functions
 
 alias q="tail -F /tmp/q"
-alias ans="cd ~/devel/ansible"
 
 export HISTFILESIZE=
 export HISTSIZE=
