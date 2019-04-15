@@ -16,7 +16,6 @@ set nocompatible
 
 syntax on
 set background=dark
-colorscheme default
 set t_Co=256
 set t_ut=
 
@@ -93,3 +92,5 @@ nnoremap <leader>q oimport q; q(<Esc>
 
 " delete trailing white space on save
 autocmd FileType py,yml,yaml autocmd BufWritePre <buffer> %s/\s\+$//e
+
+autocmd FileType yaml setlocal ai ts=2 sw=2 et
