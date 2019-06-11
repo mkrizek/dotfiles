@@ -27,3 +27,11 @@ NOCOLOR="\[\033[00m\]"
 PS1="$GREEN\u@\h$NOCOLOR:$BLUE\w$YELLOW\$(parse_git_branch) $NOCOLOR\$ "
 export EDITOR=vim
 export LIBVIRT_DEFAULT_URI="qemu:///system"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi

@@ -19,6 +19,8 @@ set background=dark
 set t_Co=256
 set t_ut=
 
+set encoding=utf-8
+
 set wildignore=*.o,*~,*.pyc                         " ignore compiled files
 set showcmd                                         " show command in bottom bar
 set cursorline                                      " highlight current line
@@ -89,6 +91,8 @@ nnoremap <leader>er oimport epdb; epdb.serve()<Esc>
 nnoremap <leader>eu oimport pudb; pudb.set_trace()<Esc>
 nnoremap <leader>p oimport pdb; pdb.set_trace()<Esc>
 nnoremap <leader>q oimport q; q(<Esc>
+
+set pastetoggle=<F3>
 
 " delete trailing white space on save
 autocmd FileType py,yml,yaml autocmd BufWritePre <buffer> %s/\s\+$//e
