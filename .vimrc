@@ -57,6 +57,14 @@ set smartcase                                       " when searching try to be s
 nnoremap <leader><space> :nohlsearch<CR>            " turn off search highlight
 
 
+set foldmethod=indent
+" Keep all folds open when a file is opened
+augroup OpenAllFoldsOnFileOpen
+  autocmd!
+  autocmd BufRead * normal zR
+augroup END
+
+
 set laststatus=2                                    " always show window info
 set statusline+=%m                                  " modified
 set statusline+=%r                                  " readonly

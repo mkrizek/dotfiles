@@ -8,12 +8,12 @@
     ui = auto
 [alias]
     co = checkout
+    cb = checkout -b
     br = branch -v
     ci = commit
     st = status
     lg = log --decorate=full
     up = !git fetch upstream && git rebase upstream/devel
-    cbr = !sh -c 'git fetch upstream && git rebase upstream/devel devel && git checkout -b "$1" devel' -
     back = !sh -c 'git fetch upstream && git checkout -b "backport/$1/$2" "upstream/stable-$1"' -
     upm = !git fetch upstream && git rebase upstream/master
     pr = !sh -c 'git fetch upstream pull/$1/head:pr-$1' -
