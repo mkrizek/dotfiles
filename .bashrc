@@ -27,7 +27,7 @@ NOCOLOR="\[\033[00m\]"
 
 #PS1="$GREEN\u@\h$NOCOLOR:$BLUE\w$YELLOW\$(parse_git_branch) $NOCOLOR\$ "
 PS1="$BLUE\w$NOCOLOR\$(parse_git_branch) $NOCOLOR\$ "
-export EDITOR=vim
+export EDITOR=vi
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 
 export PYENV_ROOT="$HOME/.pyenv"

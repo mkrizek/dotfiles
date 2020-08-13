@@ -7,6 +7,7 @@
     status = auto
     ui = auto
 [alias]
+    unstage = reset HEAD^
     co = checkout
     cb = checkout -b
     br = branch -v
