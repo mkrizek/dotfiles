@@ -1,5 +1,7 @@
 syntax on
 
+highlight SpecialKey guifg=grey
+
 set confirm
 set cursorline
 set encoding=utf-8
@@ -9,7 +11,7 @@ set ignorecase
 set incsearch
 set laststatus=2
 set list
-set listchars=tab:>-,trail:~
+set listchars=tab:\│\ ,trail:~
 set nojoinspaces
 set path+=**  " :find works recursively
 set pastetoggle=<F3>
@@ -17,6 +19,7 @@ set showcmd
 set showmatch
 set smartcase
 set statusline+=%m%r%h%w%f%=%y\ %p%%\ %l:%c
+set termguicolors
 set title
 set wildignore=*.o,*~,*.pyc
 set wildmenu
