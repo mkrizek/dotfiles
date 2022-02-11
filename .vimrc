@@ -1,7 +1,9 @@
 syntax on
+set background=dark
 
-highlight SpecialKey guifg=grey
+colorscheme darcula
 
+set autoread
 set confirm
 set cursorline
 set encoding=utf-8
@@ -19,7 +21,6 @@ set showcmd
 set showmatch
 set smartcase
 set statusline+=%m%r%h%w%f%=%y\ %p%%\ %l:%c
-set termguicolors
 set title
 set wildignore=*.o,*~,*.pyc
 set wildmenu
