@@ -17,6 +17,7 @@ set listchars=tab:\│\ ,trail:~
 set nojoinspaces
 set path+=**  " :find works recursively
 set pastetoggle=<F3>
+set scrolloff=5
 set showcmd
 set showmatch
 set smartcase
