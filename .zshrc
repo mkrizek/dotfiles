@@ -11,17 +11,11 @@ SAVEHIST=10000000
 
 alias ll="ls -l"
 alias q="tail -F /tmp/q"
+alias ap="ansible-playbook"
 
 export TMPDIR=/tmp
-
 export PYENV_ROOT="$HOME/.pyenv"
-export GOPATH=$HOME/go
-
-export PATH="$HOME/.local/bin:$PYENV_ROOT/bin:$PATH:$GOPATH/bin"
-
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/src
+export PATH="$PYENV_ROOT/bin:$PATH"
 
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
-source $HOME/.local/bin/virtualenvwrapper_lazy.sh
