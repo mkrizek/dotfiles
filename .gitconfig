@@ -13,7 +13,7 @@
     br = branch -v
     ci = commit
     st = status
-    lg = log --pretty=format:'%Cred%h %Cblue%as %Cgreen%<(40)%an %Cblue> %Creset%s'
+    lg = log --pretty=format:'%Cred%h %Cblue%ai %Cgreen%<(30)%an %Cblue> %Creset%s'
     up = !git fetch upstream && git rebase upstream/devel
     back = !sh -c 'git fetch upstream && git checkout -b "backport/$1/$2" "upstream/stable-$1"' -
     pr = !sh -c 'git fetch upstream pull/$1/head:pr-$1' -
